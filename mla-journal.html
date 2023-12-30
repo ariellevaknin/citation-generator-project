@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Citation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="citation-javascript.js"></script>
+</head>
+
+<body>
+<h1 class="title-page">Citation Generator</h1>
+
+<div class="citation-styles">
+    <h2 class="mla">MLA</h2>
+    <a href="apa-journal.html"><h2 class="nav">APA</h2></a>
+    <a href="chicago-journal.html"><h2 class="nav">Chicago</h2></a>
+</div>
+
+<div class="citation-type">
+    <a href="mla-website.html"><h2 class="nav">Website</h2></a>
+    <h2 class="mla">Journal</h2>
+    <a href="mla-book.html"><h2 class="nav">Book</h2></a>
+</div>
+
+<div class="inputs-label">
+    <h2>
+        Inputs 
+    </h2>
+</div>
+
+
+<div class="inputs">
+    <label for="first" class="first">Author:</label>
+    <input type="text" placeholder=" First Name" id="first">
+
+    <label for="last" class="last"></label>
+    <input type="text" id="last" class="last" placeholder=" Last Name">
+
+    <label for="article-title" class="article-title">Article Title:</label>
+    <input type="text" id="article-title" placeholder=" Article Title">
+
+    <label for="journal-title" class="journal-title">Journal Title:</label>
+    <input type="text" id="journal-title" placeholder=" Journal Title">
+
+    <label for="volume" class="volume">Volume Number</label>
+    <input type="text" id="volume" placeholder=" ##">
+
+    <label for="issue" class="issue">Issue Number</label>
+    <input type="text" id="issue" placeholder=" ##">
+
+    <label for="date" class="date">Year Published:</label>
+    <input type="text" id="date" placeholder=" ####">
+
+    <label for="pages" class="pages">Pages:</label>
+    <input type="text" id="pages" placeholder=" ##-##">
+
+    <label for="url" class="url">DOI:</label>
+    <input type="text" id="url" placeholder=" doi:10.1234/example-doi">
+
+    <button class="submit-mla-journal" onclick="mlaJournal()">Generate Citation</button>
+</div>
+
+<div class="output">
+    <h2>
+        Output:  
+    </h2>
+</div>
+
+<p class="mla-journal-citation" id="mla-journal-citation"></p>
+
+</body>
+</html>

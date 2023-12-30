@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Citation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="citation-javascript.js"></script>
+</head>
+
+<body>
+<h1 class="title-page">Citation Generator</h1>
+
+<div class="citation-styles">
+    <h2 class="mla">MLA</h2>
+    <a href="apa-book.html"><h2 class="nav">APA</h2></a>
+    <a href="chicago-book.html"><h2 class="nav">Chicago</h2></a>
+</div>
+
+<div class="citation-type">
+    <a href="mla-website.html"><h2 class="nav">Website</h2></a>
+    <a href="mla-journal.html"><h2 class="nav">Journal</h2></a>
+    <h2 class="mla">Book</h2>
+</div>
+
+<div class="inputs-label">
+    <h2>
+        Inputs 
+    </h2>
+</div>
+
+
+<div class="inputs">
+    <label for="first" class="first">Author:</label>
+    <input type="text" placeholder=" First Name" id="first">
+
+    <label for="last" class="last"></label>
+    <input type="text" id="last" class="last" placeholder=" Last Name">
+
+    <label for="article-title" class="article-title">Book Title:</label>
+    <input type="text" id="article-title" placeholder=" Book Title">
+
+    <label for="publisher" class="publisher">Publisher</label>
+    <input type="text" id="publisher" placeholder=" Publisher">
+
+    <label for="date" class="date">Year Published:</label>
+    <input type="text" id="date" placeholder=" ####">
+
+    <label for="pages" class="pages">Pages:</label>
+    <input type="text" id="pages" placeholder=" ##-##">
+
+    <button class="submit-mla-book" onclick="mlaBook()">Generate Citation</button>
+</div>
+
+<div class="output">
+    <h2>
+        Output:  
+    </h2>
+</div>
+
+<p class="mla-book-citation" id="mla-book-citation"></p>
+
+</body>
+</html>

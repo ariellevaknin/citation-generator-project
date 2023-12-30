@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Citation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="citation-javascript.js"></script>
+</head>
+
+<body>
+<h1 class="title-page">Citation Generator</h1>
+
+<div class="citation-styles">
+    <a href="mla-website.html"><h2 class="nav">MLA</h2></a>
+    <a href="apa-website.html"><h2 class="nav">APA</h2></a>
+    <h2 class="chicago">Chicago</h2>
+</div>
+
+<div class="citation-type">
+    <h2 class="chicago">Website</h2>
+    <a href="chicago-journal.html"><h2 class="nav">Journal</h2></a>
+    <a href="chicago-book.html"><h2 class="nav">Book</h2></a>
+</div>
+
+<div class="inputs-label">
+    <h2>
+        Inputs 
+    </h2>
+</div>
+
+
+<div class="inputs">
+    <label for="first" class="first">Author:</label>
+    <input type="text" placeholder=" First Name" id="first">
+
+    <label for="last" class="last"></label>
+    <input type="text" id="last" class="last" placeholder=" Last Name">
+
+    <label for="article-title" class="article-title">Article Title: </label>
+    <input type="text" id="article-title" placeholder=" Article Title">
+
+    <label for="date" class="date">Date Published:</label>
+    <input type="text" id="date" placeholder=" Month ##, Year">
+
+    <label for="website-title" class="website-title">Website Title:</label>
+    <input type="text" id="website-title" placeholder=" Website Title">
+
+    <label for="url" class="url">URL:</label>
+    <input type="text" id="url" placeholder=" URL">
+
+    <button class="submit-chicago-web" onclick="chicagoWeb()">Generate Citation</button>
+</div>
+
+<div class="output">
+    <h2>
+        Output:  
+    </h2>
+</div>
+
+<p class="chicago-web-citation" id="chicago-web-citation"></p>
+
+</body>
+</html>
